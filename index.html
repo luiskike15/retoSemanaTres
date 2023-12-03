@@ -31,18 +31,19 @@
 
     <section class="categoriaProductos">
         <h2>Categoría de productos</h2>
-        <table border="2px">
-            <tr>
-                <td><img src="img/categoria1.jpg" alt="categoria1"></td>
-                <td><img src="img/categoria2.jpg" alt="categoria2"></td>
-                <td><img src="img/categoria3.jpg" alt="categoria3"></td>
-            </tr>
-            <tr>
-                <td>Oficina</td>
-                <td>Hogar</td>
-                <td>Cocina</td>
-            </tr>
-        </table>
+        <div>
+            <img src="img/categoria1.jpg" alt="categoria1">
+            <p>Oficina</p>
+        </div>
+        <div>
+            <img src="img/categoria2.jpg" alt="categoria2">
+            <p>Hogar</p>
+        </div>
+
+        <div>
+            <img src="img/categoria3.jpg" alt="categoria3">
+            <p>Cocina</p>
+        </div>
     </section>
 
     <section class="sobreNosotros">
@@ -58,69 +59,77 @@
             </p>
         </div>
     </section>
+    <br>
 
     <section class="nuestrosProductos">
-        
-        <div class="textoProductoUno">
-            <h2>Producto 1</h2>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p><strong>$1,000,000.00</strong></p>
+        <h2>Nuestros Productos</h2>
+        <article>
+            <div class="imagenProductoUno">
+                <img src="img/producto1.jpg" alt="producto 1">
+            </div>
 
-            <button>
-                Agregar al carrito
-            </button>
-        </div>
+            <div class="textoProductoUno">
+                <h2>Producto 1</h2>
+                <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                <p><strong>$1,000,000.00</strong></p>
+    
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </article>
 
-        <div class="imagenProductoUno">
-            <img src="img/producto1.jpg" alt="producto 1">
-        </div>
+        <article>
+            <div class="imagenProductoDos">
+                <img src="img/producto2.jpg" alt="producto 2">
+            </div>
+    
+            <div class="textoProductoDos">
+                <h2>Producto 2</h2>
+                <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                <p><strong>$1,000,000.00</strong></p>
+    
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </article>
 
+        <article>
+            <div class="imagenProductoTres">
+                <img src="img/producto3.jpg" alt="producto 3">
+            </div>
+            <div class="textoProductoTres">
+                <h2>Producto 3</h2>
+                <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                <p><strong>$1,000,000.00</strong></p>
+    
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </article>
 
-        <div class="textoProductoDos">
-            <h2>Producto 2</h2>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p><strong>$1,000,000.00</strong></p>
+        <article>
+            <div class="imagenProductoCuatro">
+                <img src="img/producto4.jpg" alt="producto 4">
+            </div>
+            <div class="textoProductoCuatro">
+                <h2>Producto 4</h2>
+                <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
+                <p><strong>$1,000,000.00</strong></p>
+    
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </article>
 
-            <button>
-                Agregar al carrito
-            </button>
-        </div>
-
-        <div class="imagenProductoDos">
-            <img src="img/producto2.jpg" alt="producto 2">
-        </div>
-
-        <div class="textoProductoTres">
-            <h2>Producto 3</h2>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p><strong>$1,000,000.00</strong></p>
-
-            <button>
-                Agregar al carrito
-            </button>
-        </div>
-
-        <div class="imagenProductoTres">
-            <img src="img/producto3.jpg" alt="producto 3">
-        </div>
-
-        <!-- IMG PRODUCTO 4 -->
-        <div class="textoProductoCuatro">
-            <h2>Producto 4</h2>
-            <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
-            <p><strong>$1,000,000.00</strong></p>
-
-            <button>
-                Agregar al carrito
-            </button>
-        </div>
-
-        <div class="imagenProductoCuatro">
-            <img src="img/producto4.jpg" alt="producto 4">
-        </div>
-
-               <!-- IMG PRODUCTO 5 -->
-               <div class="textoProductoCinco">
+        <article>
+            <div class="imagenProductoCinco">
+                <img src="img/producto5.jpg" alt="producto 5">
+            </div>
+            <div class="textoProductoCinco">
                 <h2>Producto 5</h2>
                 <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
                 <p><strong>$1,000,000.00</strong></p>
@@ -129,12 +138,13 @@
                     Agregar al carrito
                 </button>
             </div>
-    
-            <div class="imagenProductoCinco">
-                <img src="img/producto5.jpg" alt="producto 5">
-            </div>
 
-            <!-- IMG PRODUCTO 6 -->
+        </article>
+
+        <article>
+            <div class="imagenProductoSeis">
+                <img src="img/producto6.jpg" alt="producto 6">
+            </div>
             <div class="textoProductoSeis">
                 <h2>Producto 6</h2>
                 <p>Proin condimentum sodales risus ut aliquet. Nunc eu neque quis sapien feugiat posuere sed nec mauris.</p>
@@ -144,10 +154,7 @@
                     Agregar al carrito
                 </button>
             </div>
-
-            <div class="imagenProductoSeis">
-                <img src="img/producto6.jpg" alt="producto 6">
-            </div>
+        </article>
     </section>
     </main>
     <footer>
