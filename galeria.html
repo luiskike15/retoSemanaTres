@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+        rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h1>Tienda Muebles</h1>
-        <hr>
-        <nav>
+    <header class="cabecera">
+        <div class="tituloPrincipal">
+            <h1> <span style="color: black;">Tienda</span>
+                <span style="color: #037BC0;">Muebles</span>
+            </h1>
+        </div>
+        <hr class="separador">
+        <nav class="menu">
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
@@ -19,57 +31,65 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <hr>
+    
     </header>
 
     <main>
-        <h2>Galería</h2>
+        <div class="tituloPrincipal">
+            <h2>Galería</h2>
+        </div>
+
         <section class="galeria">
-            <img src="img/galeria_01.jpg" alt="img1" width="300px">
-            <img src="img/galeria_02.jpg" alt="img2" width="300px">
-            <img src="img/galeria_03.jpg" alt="img3" width="300px">
-            <img src="img/galeria_04.jpg" alt="img4" width="300px">
-            <img src="img/galeria_05.jpg" alt="img5" width="300px">
-            <img src="img/galeria_06.jpg" alt="img6" width="300px">
-            <img src="img/galeria_07.jpg" alt="img7" width="300px">
-            <img src="img/galeria_08.jpg" alt="img8" width="300px">
-            <img src="img/galeria_09.jpg" alt="img9" width="300px">
+            <img class="foto" src="img/galeria_01.jpg" alt="img1">
+            <img class="foto" src="img/galeria_02.jpg" alt="img2">
+            <img class="foto" src="img/galeria_03.jpg" alt="img3">
+            <img class="foto" src="img/galeria_04.jpg" alt="img4">
+            <img class="foto" src="img/galeria_05.jpg" alt="img5">
+            <img class="foto" src="img/galeria_06.jpg" alt="img6">
+            <img class="foto" src="img/galeria_07.jpg" alt="img7">
+            <img class="foto" src="img/galeria_08.jpg" alt="img8">
+            <img class="foto" src="img/galeria_09.jpg" alt="img9">
         </section>
     </main>
+        <hr class="separador">
+        <footer>
+            <div class="footer">
+             
+                <div class="footer categoria">
+                    <h3 class="titulofooter">Categorías</h3>
+                    <ul class="listafooter">
+                        <li><a href="#">Cocina</a></li>
+                        <li><a href="#">Oficina</a></li>
+                        <li><a href="#">Jardín</a></li>
+                        <li><a href="#">Cochera</a></li>
+                        <li><a href="#">Dormitorio</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <hr>
-        <div class="categoria">
-            <h3>Categorías</h3>
-            <ul>
-                <li><a href="#">Cocina</a></li>
-                <li><a href="#">Oficina</a></li>
-                <li><a href="#">Jardín</a></li>
-                <li><a href="#">Cochera</a></li>
-                <li><a href="#">Dormitorio</a></li>
-            </ul>
-        </div>
+                <div class="footer nosotrosfooter">
+                    <h3 class="titulofooter">Sobre Nosotros</h3>
+                    <ul class="listafooter">
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Mision Vision y Valores</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
 
-        <div class="nosotros">
-            <h3>Sobre Nosotros</h3>
-            <ul>
-                <li><a href="#">Nuestra Historia</a></li>
-                <li><a href="#">Mision Vision y Valores</a></li>
-                <li><a href="#">Carreras</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos de Servicio</a></li>
-            </ul>
-        </div>
+                <div class="footer soporte">
+                    <h3 class="titulofooter">Soporte</h3>
+                    <ul class="listafooter">
+                        <li><a href="#">Preguntas Frecuentes.</a></li>
+                        <li><a href="#">Ayuda en línea.</a></li>
+                        <li><a href="#">Confianza y Seguridad.</a></li>
+                    </ul>
+                </div>
+                <div class="footer derechos">
+                    <p>Todos los derechos Reservados, TiendaMuebles</p>
+                </div>
+            </div>
 
-        <div class="Soporte">
-            <h3>Soporte</h3>
-            <ul>
-                <li><a href="#">Preguntas Frecuentes.</a></li>
-                <li><a href="#">Ayuda en línea.</a></li>
-                <li><a href="#">Confianza y Seguridad.</a></li>
-            </ul>
-        </div>
-        <p>Todos los derechos Reservados, TiendaMuebles</p>
-    </footer>
+        </footer>
 </body>
 </html>

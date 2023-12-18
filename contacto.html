@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+        rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Tienda Muebles</h1>
-        <hr>
-        <nav>
+    <header class="cabecera">
+        <div class="tituloPrincipal">
+            <h1> <span style="color: black;">Tienda</span>
+                <span style="color: #037BC0;">Muebles</span>
+            </h1>
+        </div>
+        <hr class="separador">
+        <nav class="menu">
             <ul>
                 <li><a href="/">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
@@ -19,42 +30,39 @@
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <hr>
+    
     </header>
 
 
-
-
-
-    <section>
+    <div class="tituloPrincipal">
         <h2>Contacto</h2>
+    </div>
 
 
-        
-
+    <section class="formulario">
         <form action="index.html">
         
             <fieldset>
                 <legend>TUS DATOS</legend>
             <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <label class="label" for="nombre">Nombre:</label>
+                <input class="inputdatos" type="text" name="nombre" placeholder="Tu Nombre" required>
             </div>
             <div>
-                <label for="asunto">Asunto:</label>
-                <input type="text" name="nombre" placeholder="Tu Asunto" required>
+                <label  class="label" for="asunto">Asunto:</label>
+                <input class="inputdatos" type="text" name="nombre" placeholder="Tu Asunto" required>
             </div>
             <div>
-                <label for="asunto">Asunto:</label>
-                <input type="email" name="email" placeholder="Tu Email" required>
+                <label class="label" for="asunto">Asunto:</label>
+                <input class="inputdatos" type="email" name="email" placeholder="Tu Email" required>
             </div>
             <div>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" name="telefono" placeholder="Tu Teléfono" required>
+                <label  class="label" for="telefono">Teléfono:</label>
+                <input class="inputdatos" type="tel" name="telefono" placeholder="Tu Teléfono" required>
             </div>
 
             <div>
-                <label for="mensaje">Mensaje:</label>
+                <label class="label" for="mensaje">Mensaje:</label>
                 <textarea name="mensaje" id="" cols="30" rows="10"  placeholder="Escribe tu mensaje:" required></textarea>
             </div>
              </fieldset>
@@ -62,13 +70,12 @@
         
         </br>
 
-
         <form action="index.html">
 
             <fieldset>
 
             <legend>PAÍS</legend>
-            <label for="pais">Pais</label>
+            <label class="label" for="pais">Pais</label>
             <select name="pais" id="pais" placeholder="Selecciones" required>
                 <option value="">--Seleccione--</option>
                 <option value="Mexico">Mexico</option>
@@ -85,18 +92,18 @@
             <fieldset>
                 <legend>INFORMACIÓN EXTRA</legend>
                 <div>
-                    <label for="cliente">Cliente</label>
+                    <label class="label" for="cliente">Cliente</label>
                     <input type="radio" name="infoExtra" id="cliente" value="cliente" checked>
                 </div>
                 
                 <div>
-                    <label for="proveedor">Proveedor</label>
+                    <label class="label" for="proveedor">Proveedor</label>
                     <input type="radio" name="infoExtra" id="proveedor" value="proveedor" checked>
                 </div>
                 
                 <div>
-                    <label for="interes">Categoría de Interés<input list="interes"></label>
-                    <datalist id="interes">
+                    <label class="label" for="interes">Categoría de Interés: <input list="interes"></label>
+                    <datalist class="datalist"  id="interes">
                         <option value="Cocina"></option>
                         <option value="Exterior"></option>
                         <option value="Recamaras"></option>
@@ -109,42 +116,52 @@
 
         </form>
         <br>
-        <input type="button" value="ENVIAR FORMULARIO">
+            <input class="botonform" type="button" value="ENVIAR FORMULARIO">
         </form>
+
+
+
+
+
     </section>
+    <hr class="separador">
     <footer>
-        <hr>
-        <div class="categoria">
-            <h3>Categorías</h3>
-            <ul>
-                <li><a href="#">Cocina</a></li>
-                <li><a href="#">Oficina</a></li>
-                <li><a href="#">Jardín</a></li>
-                <li><a href="#">Cochera</a></li>
-                <li><a href="#">Dormitorio</a></li>
-            </ul>
-        </div>
+        <div class="footer">
+         
+            <div class="footer categoria">
+                <h3 class="titulofooter">Categorías</h3>
+                <ul class="listafooter">
+                    <li><a href="#">Cocina</a></li>
+                    <li><a href="#">Oficina</a></li>
+                    <li><a href="#">Jardín</a></li>
+                    <li><a href="#">Cochera</a></li>
+                    <li><a href="#">Dormitorio</a></li>
+                </ul>
+            </div>
 
-        <div class="nosotros">
-            <h3>Sobre Nosotros</h3>
-            <ul>
-                <li><a href="#">Nuestra Historia</a></li>
-                <li><a href="#">Mision Vision y Valores</a></li>
-                <li><a href="#">Carreras</a></li>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos de Servicio</a></li>
-            </ul>
-        </div>
+            <div class="footer nosotrosfooter">
+                <h3 class="titulofooter">Sobre Nosotros</h3>
+                <ul class="listafooter">
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Mision Vision y Valores</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                </ul>
+            </div>
 
-        <div class="Soporte">
-            <h3>Soporte</h3>
-            <ul>
-                <li><a href="#">Preguntas Frecuentes.</a></li>
-                <li><a href="#">Ayuda en línea.</a></li>
-                <li><a href="#">Confianza y Seguridad.</a></li>
-            </ul>
+            <div class="footer soporte">
+                <h3 class="titulofooter">Soporte</h3>
+                <ul class="listafooter">
+                    <li><a href="#">Preguntas Frecuentes.</a></li>
+                    <li><a href="#">Ayuda en línea.</a></li>
+                    <li><a href="#">Confianza y Seguridad.</a></li>
+                </ul>
+            </div>
+            <div class="footer derechos">
+                <p>Todos los derechos Reservados, TiendaMuebles</p>
+            </div>
         </div>
-        <p>Todos los derechos Reservados, TiendaMuebles</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: calibri;
+    background-color: white;
+}
+
+.separador{
+    height: 1px;
+}
+
+.menu {
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+    padding: 20px 5px 20px 5px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+.menu>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.menu ul a {
+    color: black;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Times;
+    font-size: 30px;
+}
+
+.portada {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.portada>img {
+    height: 100%;
+    width: 100%;
+}
+
+
+#cat_pro {
+
+    display: flex;
+    justify-content: center;
+    height: 370px;
+
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.categoriaProductos {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 20px 0px;
+}
+
+.categoriaProductos .catfooter {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.categoriaProductos .catfooter:hover {
+    background-color: #037BC0;
+    color: white;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.nosotros {
+    background-color: #037BC0;
+    display: flex;
+    height: 400px;
+}
+
+.contenido_imagen {
+    width: 50%;
+    overflow: hidden;
+}
+
+.contenido_texto {
+    display: flex;
+    width: 50%;
+    padding-left: 80px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenido_texto h2 {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* CSSS PRODUCTOS */
+
+#productos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+#productos h2 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+}
+
+#productos p {
+    font-family: calibri;
+    font-weight: 100;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+.producto_uno {
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 0px;
+
+    background-color: #037BC0;
+    margin: 10px;
+    width: 300px;
+    padding: 0;
+
+    flex-grow: 1;
+    justify-content: center;
+
+
+}
+
+.producto {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border: 4px solid;
+    background-color: #037BC0;
+    margin: 10px;
+    width: 300px;
+    padding: 0;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.dos {
+    width: 40%;
+}
+
+.tres {
+    width: 40%;
+}
+
+.imagenProductoUno {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-grow: 10;
+}
+
+.textoProductoUno {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 40px;
+    justify-content: flex-start;
+    flex-grow: 1;
+    margin: 30px;
+}
+
+.uno {
+    width: 100%;
+    height: 440px;
+}
+
+
+.precio {
+    font-family: 'Archivo Black' !important;
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+
+.botoncarrito {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #8CBC00;
+    text-decoration: none;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.botoncarrito:hover {
+    background-color: #7aa005;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: calc(100%/3 - 70px);
+    justify-content: center;
+}
+
+.categoria {
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: flex-start;
+    
+
+}
+
+.nosotrosfooter {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.soporte {
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.derechos {
+    flex-basis: 100%;
+
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-weight: 100;
+}
+
+
+.titulofooter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+
+.listafooter{
+    padding-bottom: 40px;
+    padding-left: 20px;
+    font-size:17px;
+    line-height: 30px; 
+
+}
+
+main{
+    margin-bottom: 30px;
+}
+
+
+.listafooter li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+
+
+
+.nosotroscon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.imagencon{
+
+    display: flex;
+ 
+}
+
+.textocon{
+    display: flex;
+    font-size: 19px;
+    flex-basis: 70%;
+    line-height: 30px;
+    font-weight: 100;
+
+}
+
+.layoutblog{
+    
+    display: flex;
+    margin: 0 60px 60px 60px;
+}
+
+.mainblog{
+
+    width: 65%;
+
+    padding: 20px;
+}
+
+.aside{
+    width: 35%;
+    padding-top: 30px;
+    padding-left: 20px;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+
+}
+
+.tituloblog{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 45px;
+    
+}
+.tituloblogaside{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    
+}
+.thumb{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+
+ #glosario{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+
+ }
+
+ .fechaautor{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 20px;
+
+}
+ 
+ 
+ .fecha{
+    display: flex;
+    justify-content: flex-start;
+
+ }
+
+ .autor{
+    display: flex;
+    justify-content: flex-end;
+
+ }
+
+strong{
+    color: black;
+}
+.contenidoblog{
+    font-size: 19px;
+    font-weight: 100;
+    padding-left: 50px;
+}
+
+
+.botonblog {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #8CBC00;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+
+
+.botonblog:hover {
+    background-color: #7aa005;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+p > a {
+    color: white;
+}
+
+.listadoaside{
+    line-height: 35px;
+    padding-left: 38px;
+    padding-top: 30px;
+    font-size: 18px;
+
+}
+
+.listadoaside > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+}
+
+
+.galeria{
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-basis: calc((100% 3) - 60px );
+    justify-content: center;
+}
+ .foto{
+    width:  400px;
+    height: 500px;
+    padding: 10px;
+ }
+
+
+ .formulario{
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 300px;
+    padding-right: 300px;
+ }
+
+
+
+ legend{
+    background-color: #005485;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 60px;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ fieldset{
+    padding: 30px;
+}
+
+.label{
+    padding-right: 30px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    /* min-width: 120px; */
+}
+
+.botonform{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #8CBC00;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.botonform:hover {
+    background-color: #7aa005;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.inputdatos{
+    width: 70%;
+}
+
+textarea{
+    width: 80%
+}
+
+.datalist{
+    width: 100%
+}
